@@ -5,7 +5,10 @@ license = "Apache 2.0"
 authors = ["Studio Mirai, LLC (dev@sm.xyz)"]
 
 [dependencies]
-Codec = { git = "https://github.com/sui-potatoes/app.git", subdir = "packages/codec", rev = "main" }
+codec = { r.mvr = "@potatoes/codec" }
 
 [addresses]
 blob_utils = "0x0"
+
+[r.mvr]
+network = "testnet"
