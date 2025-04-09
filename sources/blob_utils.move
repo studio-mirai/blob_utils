@@ -7,13 +7,7 @@ use sui::bcs;
 //=== Public Functions ===
 
 public fun b64_to_u256(blob_id_b64: String): u256 {
-    use std::debug;
-    debug::print(&blob_id_b64);
-    let decoded = decode(blob_id_b64);
-    debug::print(&decoded);
-    let decoded_u256 = bcs::peel_u256(&mut bcs::new(decoded));
-    debug::print(&decoded_u256);
-    decoded_u256
+    bcs::peel_u256(&mut bcs::new(decode(blob_id_b64)))
 }
 
 public fun u256_to_b64(blob_id_u256: u256): String {
