@@ -2,11 +2,10 @@
 
 [move]
 version = 3
-manifest_digest = "BA95E1D25C7B6F77A17EF78388ED1FF505393B231BC30E011D81749E92C6058B"
-deps_digest = "52B406A7A21811BEF51751CF88DA0E76DAEFFEAC888D4F4060B1A72BBE7D8D35"
+manifest_digest = "F02CC5F04165A3E3D87A5F786AD6475FFFE620BAE0342855CF1952ECA9263C34"
+deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
-  { id = "Codec", name = "Codec" },
   { id = "DeepBook", name = "DeepBook" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
@@ -21,14 +20,6 @@ dependencies = [
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiSystem", name = "SuiSystem" },
-]
-
-[[move.package]]
-id = "Codec"
-source = { git = "https://github.com/sui-potatoes/app.git", rev = "codec@testnet-v2", subdir = "packages/codec" }
-
-dependencies = [
-  { id = "Sui", name = "Sui" },
 ]
 
 [[move.package]]
@@ -70,6 +61,6 @@ flavor = "sui"
 
 [env.testnet]
 chain-id = "4c78adac"
-original-published-id = "0x1de873ba6c61570593375e9f069204f0d55dbe10868f6456ef3fa905a5374a17"
-latest-published-id = "0x1de873ba6c61570593375e9f069204f0d55dbe10868f6456ef3fa905a5374a17"
+original-published-id = "0x576c363e6aee786eb9e8091ae1dc3b70f335d94acfa5efb0829a1b08f18068c1"
+latest-published-id = "0x576c363e6aee786eb9e8091ae1dc3b70f335d94acfa5efb0829a1b08f18068c1"
 published-version = "1"
