@@ -5,7 +5,6 @@ license = "Apache 2.0"
 authors = ["Studio Mirai, LLC (dev@sm.xyz)"]
 
 [dependencies]
-codec = { r.mvr = "@potatoes/codec" }
 
 [addresses]
 blob_utils = "0x0"
