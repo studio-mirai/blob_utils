@@ -2,10 +2,11 @@
 
 [move]
 version = 3
-manifest_digest = "F02CC5F04165A3E3D87A5F786AD6475FFFE620BAE0342855CF1952ECA9263C34"
-deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
+manifest_digest = "BF4E937F3F24E6DDA7F6B748E7E4387895FEF245994D6F6E3248B8D5378D8C93"
+deps_digest = "52B406A7A21811BEF51751CF88DA0E76DAEFFEAC888D4F4060B1A72BBE7D8D35"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
+  { id = "Codec", name = "Codec" },
   { id = "DeepBook", name = "DeepBook" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
@@ -17,6 +18,18 @@ id = "Bridge"
 source = { git = "https://github.com/MystenLabs/sui.git", rev = "04f11afaf5e0", subdir = "crates/sui-framework/packages/bridge" }
 
 dependencies = [
+  { id = "MoveStdlib", name = "MoveStdlib" },
+  { id = "Sui", name = "Sui" },
+  { id = "SuiSystem", name = "SuiSystem" },
+]
+
+[[move.package]]
+id = "Codec"
+source = { git = "https://github.com/sui-potatoes/app.git", rev = "codec/v3", subdir = "packages/codec" }
+
+dependencies = [
+  { id = "Bridge", name = "Bridge" },
+  { id = "DeepBook", name = "DeepBook" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiSystem", name = "SuiSystem" },

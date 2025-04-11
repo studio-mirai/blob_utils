@@ -5,6 +5,7 @@ license = "Apache 2.0"
 authors = ["Studio Mirai, LLC (dev@sm.xyz)"]
 
 [dependencies]
+Codec = { git = "https://github.com/sui-potatoes/app.git", subdir = "packages/codec", rev = "codec/v3" }
 
 [addresses]
 blob_utils = "0x0"
