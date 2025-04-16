@@ -7,12 +7,12 @@ use sui::bcs;
 //=== Public Functions ===
 
 // Convert a Walrus blob ID encoded in URL-safe Base64 to a u256.
-public fun to_u256(blob_id_b64: String): u256 {
+public fun blob_id_to_u256(blob_id_b64: String): u256 {
     bcs::peel_u256(&mut bcs::new(decode(blob_id_b64)))
 }
 
 // Convert a u256 to a Walrus blob ID encoded in URL-safe Base64.
-public fun to_b64_string(blob_id_u256: u256): String {
+public fun blob_id_to_string(blob_id_u256: u256): String {
     encode(bcs::to_bytes(&blob_id_u256))
 }
 

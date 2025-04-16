@@ -3,11 +3,10 @@
 [move]
 version = 3
 manifest_digest = "BA95E1D25C7B6F77A17EF78388ED1FF505393B231BC30E011D81749E92C6058B"
-deps_digest = "52B406A7A21811BEF51751CF88DA0E76DAEFFEAC888D4F4060B1A72BBE7D8D35"
+deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
   { id = "Codec", name = "Codec" },
-  { id = "DeepBook", name = "DeepBook" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiSystem", name = "SuiSystem" },
@@ -26,15 +25,6 @@ dependencies = [
 [[move.package]]
 id = "Codec"
 source = { git = "https://github.com/sui-potatoes/app.git", rev = "codec@v3", subdir = "packages/codec" }
-
-dependencies = [
-  { id = "MoveStdlib", name = "MoveStdlib" },
-  { id = "Sui", name = "Sui" },
-]
-
-[[move.package]]
-id = "DeepBook"
-source = { git = "https://github.com/MystenLabs/sui.git", rev = "04f11afaf5e0", subdir = "crates/sui-framework/packages/deepbook" }
 
 dependencies = [
   { id = "MoveStdlib", name = "MoveStdlib" },
@@ -63,7 +53,7 @@ dependencies = [
 ]
 
 [move.toolchain-version]
-compiler-version = "1.46.0"
+compiler-version = "1.46.1"
 edition = "2024.beta"
 flavor = "sui"
 
@@ -71,6 +61,6 @@ flavor = "sui"
 
 [env.testnet]
 chain-id = "4c78adac"
-original-published-id = "0xe1f24227032d24a6fa00a305f44927880ba7cd40a9c456d4ce47637589d9efbb"
-latest-published-id = "0xe1f24227032d24a6fa00a305f44927880ba7cd40a9c456d4ce47637589d9efbb"
+original-published-id = "0xe4d059b398123283459e9920de5a1c707347abb2c02dbfe27fa9dcd687d34e7e"
+latest-published-id = "0xe4d059b398123283459e9920de5a1c707347abb2c02dbfe27fa9dcd687d34e7e"
 published-version = "1"
