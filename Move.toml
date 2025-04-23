@@ -11,4 +11,4 @@ codec = { r.mvr = "@potatoes/codec" }
 blob_utils = "0x0"
 
 [r.mvr]
-network = "testnet"
+network = "mainnet"
